@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- == SEO BASE (offline-friendly) == -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>Liliths Temple — Świątynia żywotności i nasycenia | Autorski masaż w Warszawie</title>
+  <meta name="description" content="Liliths Temple to świątynia obecności i zmysłowości. Autorski masaż, rytuały dotyku i przestrzeń bezwstydnej prawdy. Warszawa — Centrum." />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="theme-color" content="#0b0a0a" />
+
+  <!-- TODO (po publikacji): podmień domenę i odkomentuj -->
+  <!-- <link rel="canonical" href="https://twojadomena.pl/" /> -->
+
+  <!-- Open Graph (offline: relative paths) -->
+  <meta property="og:title" content="Liliths Temple — Świątynia żywotności i nasycenia" />
+  <meta property="og:description" content="Dotyk, który porusza. Autorski masaż w Warszawie. Dyskretnie, pięknie, prawdziwie." />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:url" content="https://twojadomena.pl/" /> -->
+  <meta property="og:image" content="/og/liliths-temple-og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="pl_PL" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Liliths Temple — Świątynia żywotności i nasycenia" />
+  <meta name="twitter:description" content="Autorski masaż, głęboka obecność i prawda ciała. Warszawa — Centrum." />
+  <meta name="twitter:image" content="/og/liliths-temple-og.jpg" />
+
+  <!-- Ikony aplikacyjne (relative; podmienisz po publikacji) -->
+  <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonty -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,700;0,800;1,700;1,800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD (offline-friendly; URL/telefon/e-mail do podmiany po publikacji) -->
+  <!-- WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url": "",
+    "name":"Liliths Temple",
+    "inLanguage":"pl-PL"
+  }
+  </script>
+
+  <!-- Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Liliths Temple",
+    "url":"",
+    "logo":"/icons/logo-512.png",
+    "sameAs":[ "https://www.instagram.com/lilithtouchofangel" ]
+  }
+  </script>
+
+  <!-- LocalBusiness / HealthAndBeautyBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HealthAndBeautyBusiness",
+    "name":"Liliths Temple",
+    "image":"/og/liliths-temple-og.jpg",
+    "url":"",
+    "telephone":"+48 123 123 123",
+    "email":"lilith@example.com",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Warszawa",
+      "addressRegion":"mazowieckie",
+      "postalCode":"00-000",
+      "addressCountry":"PL"
+    },
+    "areaServed":"Warszawa",
+    "priceRange":"PLN",
+    "currenciesAccepted":"PLN, EUR",
+    "paymentAccepted":"Cash, BankTransfer",
+    "openingHoursSpecification":[{
+      "@type":"OpeningHoursSpecification",
+      "dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens":"10:00","closes":"22:00"
+    }]
+  }
+  </script>
+
+  <!-- Service (Autorski masaż) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "serviceType":"Autorski masaż",
+    "provider":{"@type":"Organization","name":"Liliths Temple"},
+    "areaServed":{"@type":"City","name":"Warszawa"},
+    "hasOfferCatalog":{
+      "@type":"OfferCatalog",
+      "name":"Cennik",
+      "itemListElement":[
+        {"@type":"Offer","name":"90 min","priceCurrency":"PLN","price":"550"},
+        {"@type":"Offer","name":"120 min","priceCurrency":"PLN","price":"700"},
+        {"@type":"Offer","name":"180 min","priceCurrency":"PLN","price":"1000"},
+        {"@type":"Offer","name":"Sesja dla par 3h","priceCurrency":"PLN","price":"1500"}
+      ]
+    }
+  }
+  </script>
+
+  <!-- FAQPage (zostawione puste; opcjonalne uzupełnienie później) -->
+  <script type="application/ld+json" id="faq-json">
+  { "@context":"https://schema.org", "@type":"FAQPage", "mainEntity":[] }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0a0a;
+      --ink:#ece7df;
+      --muted:#cfc7b7;
+      --gold:#caa651;
+      --gold-deep:#9d7c2f;
+      --rose:#3e0f15;
+      --card:#151314;
+      --shadow:0 24px 70px rgba(0,0,0,.46);
+      --radius:22px;
+      --max:1080px;
+
+      /* Jeden stack tła — używany przez body i intro (DESKTOP) */
+      --bg-stack:
+        url("img/erotic-velvet-desktop.png"),
+        radial-gradient(900px 600px at 70% -10%, rgba(210,170,90,.08), transparent 55%),
+        radial-gradient(1200px 700px at -10% 10%, rgba(130,70,40,.08), transparent 60%),
+        radial-gradient(1400px 900px at 85% 90%, rgba(50,8,10,.55), transparent 70%),
+        radial-gradient(1200px 800px at 20% 80%, rgba(25,5,8,.95), rgba(10,7,8,1) 70%);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; color:var(--ink);
+      font-family:"Cormorant Garamond", Georgia, serif;
+      font-size:20px; line-height:1.72; letter-spacing:.3px;
+
+      /* === EROTIC VELVET RITUAL — MAIN BACKGROUND === */
+      background-color:#0a090a;
+      background-image: var(--bg-stack);
+      background-size: cover, auto, auto, auto, auto;
+      background-position: center, center, center, center, center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    @media (max-width: 680px){
+      :root{
+        /* MOBILE: ten sam stack, ale z obrazem pionowym */
+        --bg-stack:
+          url("img/erotic-velvet-mobile.png"),
+          radial-gradient(900px 600px at 70% -10%, rgba(210,170,90,.08), transparent 55%),
+          radial-gradient(1200px 700px at -10% 10%, rgba(130,70,40,.08), transparent 60%),
+          radial-gradient(1400px 900px at 85% 90%, rgba(50,8,10,.55), transparent 70%),
+          radial-gradient(1200px 800px at 20% 80%, rgba(25,5,8,.95), rgba(10,7,8,1) 70%);
+      }
+      body{
+        background-attachment: scroll; /* stabilniejsze na telefonach */
+      }
+    }
+
+    a{color:var(--gold); text-decoration:none}
+    a:hover{opacity:.92; text-decoration:underline}
+    .wrap{max-width:var(--max); margin-inline:auto; padding-inline:22px}
+
+    /* NAWIGACJA */
+    .nav{
+      position:sticky; top:0; z-index:40; backdrop-filter:saturate(120%) blur(6px);
+      background:linear-gradient(to bottom, rgba(10,9,9,.78), rgba(10,9,9,.35));
+      border-bottom:1px solid rgba(255,255,255,.06)
+    }
+    .nav .inner{display:flex; gap:14px; align-items:center; justify-content:space-between; padding:12px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{
+      width:40px; height:40px; border-radius:14px;
+      background:
+        radial-gradient(120% 120% at 30% 20%, rgba(255,255,255,.22), rgba(255,255,255,.05) 40%, transparent 60%),
+        linear-gradient(135deg, #4d1b22, #1a0b0d 60%);
+      box-shadow: inset 0 0 30px rgba(255,255,255,.05), 0 8px 22px rgba(0,0,0,.35);
+    }
+    .brand-title{
+      margin:0; padding:6px 0 8px; /* anti-clip */
+      font:400 30px/1.18 "Parisienne","Great Vibes",cursive;
+      letter-spacing:.4px; white-space:nowrap; overflow:visible;
+      background:linear-gradient(180deg, var(--gold), var(--gold-deep));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow:0 8px 24px rgba(0,0,0,.35);
+    }
+    .menu{display:flex; gap:18px; flex-wrap:wrap}
+    .menu a{font:900 13px/1 Lato, system-ui, sans-serif; letter-spacing:.7px; text-transform:uppercase; opacity:.92}
+
+    /* SEKCJE + typografia */
+    section{padding:80px 0; position:relative}
+    .kicker{font:900 12px/1 Lato, system-ui, sans-serif; letter-spacing:1.5px; color:var(--muted); text-transform:uppercase; opacity:.9}
+    h2,h3{font-family:"Playfair Display", serif; font-weight:700; font-style:italic; letter-spacing:.2px}
+    .hero{padding:110px 0 80px; position:relative}
+
+    /* HERO: główny H1 (SEO) */
+    h1.hero-title{
+      margin:.6rem 0 1rem;
+      font-family:"Playfair Display", serif;
+      font-weight:800; font-style:italic;
+      font-size:56px; line-height:1.1; letter-spacing:.4px;
+      background:linear-gradient(180deg, var(--gold), var(--gold-deep));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow:0 12px 32px rgba(0,0,0,.55), 0 0 16px rgba(202,166,81,.08);
+    }
+    @media (max-width: 680px){
+      h1.hero-title{font-size:36px; letter-spacing:.3px}
+    }
+
+    .lead{
+      max-width:820px; font:400 21px/1.78 "Cormorant Garamond", serif; color:var(--muted);
+      font-feature-settings:"liga","clig","kern","onum","ss01";
+      letter-spacing:.35px;
+    }
+
+    /* ZŁOTE NAGŁÓWKI SEKCJI */
+    .section-title{
+      margin:0 0 18px; font:700 32px/1.2 "Playfair Display", serif; letter-spacing:.2px;
+      background:linear-gradient(180deg, var(--gold), var(--gold-deep));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow:0 10px 26px rgba(0,0,0,.45); display:flex; align-items:center; gap:10px
+    }
+
+    .subtle{color:var(--muted)}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:var(--radius); box-shadow:var(--shadow); padding:24px
+    }
+    .grid{display:grid; gap:22px}
+    @media (min-width:900px){ .grid.cols-2{grid-template-columns:1fr 1fr} .grid.cols-3{grid-template-columns:repeat(3,1fr)} }
+
+    /* Cytaty */
+    blockquote{
+      margin:22px 0; padding:16px 20px; border-left:3px solid var(--gold);
+      background:rgba(255,255,255,.035);
+      border-radius:0 16px 16px 0; color:var(--ink);
+      font:italic 300 20px/1.78 "Cormorant Garamond",serif;
+      letter-spacing:1px; opacity:.94;
+    }
+
+    /* Drop-cap dla pierwszego akapitu */
+    .prose p:first-of-type:first-letter{
+      float:left; font:700 58px/0.8 "Cormorant Garamond", serif; color:var(--gold);
+      margin:.09em .18em 0 0; text-shadow:0 6px 16px rgba(0,0,0,.35);
+    }
+    .sc{font-variant-caps:small-caps; letter-spacing:.06em}
+
+    .list-pill{display:flex; flex-wrap:wrap; gap:10px; margin:12px 0 0}
+    .pill{padding:8px 12px; border:1px solid rgba(255,255,255,.14); border-radius:999px; font:800 12px/1 Lato, system-ui, sans-serif; letter-spacing:.6px; background:rgba(255,255,255,.02)}
+    .pricing{display:grid; gap:16px}
+    @media(min-width:760px){ .pricing{grid-template-columns:repeat(4,1fr)} }
+    .price{background:linear-gradient(160deg, rgba(62,15,21,.55), rgba(26,11,13,.65) 55%, rgba(255,255,255,.03) 100%); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:18px; text-align:center}
+    .price h4{margin:4px 0 6px; font:700 18px/1.2 "Cormorant Garamond", serif}
+    .price .num{font:900 22px/1 Lato, system-ui, sans-serif; color:var(--gold)}
+    .note{font-size:14px; color:var(--muted)}
+
+    /* Linki kontaktowe */
+    .contact-links{display:flex; flex-wrap:wrap; gap:12px; margin-top:12px}
+    .contact-links a{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border:1px solid rgba(255,255,255,.14); border-radius:14px; background:rgba(255,255,255,.02); font:800 14px/1 Lato, system-ui, sans-serif; letter-spacing:.4px; transition:transform .2s ease, filter .2s ease, box-shadow .2s ease;}
+    .contact-links a:hover{transform:translateY(-1px) scale(1.02); filter:drop-shadow(0 0 10px rgba(202,166,81,.35)); box-shadow:0 10px 24px rgba(0,0,0,.26) inset;}
+
+    .icon{width:18px; height:18px; fill:currentColor; color:var(--gold); transition:transform .2s ease, opacity .2s ease}
+    .icon-wrap:hover .icon{transform:scale(1.07); opacity:.95}
+
+    .footer{padding:28px 0 40px; border-top:1px solid rgba(255,255,255,.08); background:linear-gradient(180deg, rgba(26,11,13,.65), rgba(11,10,10,.95))}
+    .legal{font-size:13px; color:var(--muted)}
+
+    /* INTRO — to samo tło co na stronie + delikatna mgła dla czytelności */
+    .intro{
+      position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center;
+      background-image:
+        var(--bg-stack), /* to samo sensualne tło */
+        radial-gradient(900px 580px at 50% 30%, rgba(0,0,0,.32), transparent 65%),
+        radial-gradient(1200px 760px at 20% 80%, rgba(0,0,0,.45), rgba(0,0,0,.55) 70%);
+      background-size: cover, auto, auto;
+      background-position: center, center, center;
+      background-attachment: fixed, scroll, scroll;
+      background-repeat: no-repeat;
+      overflow:hidden;
+    }
+    .intro::before{
+      content:""; position:absolute; inset:-20% -20%;
+      background: radial-gradient(220px 150px at 60% 35%, rgba(255,226,186,.09), transparent 60%),
+                  radial-gradient(220px 150px at 40% 65%, rgba(255,226,186,.06), transparent 60%);
+      filter:blur(2px); animation:pulse 5.5s ease-in-out infinite;
+      opacity:.85; pointer-events:none;
+    }
+    @keyframes pulse{ 0%,100%{transform:scale(1); opacity:.85} 50%{transform:scale(1.06); opacity:.95} }
+    .intro .panel{
+      width:min(780px, 92vw); text-align:center; padding:30px 22px;
+      border-radius:26px; border:1px solid rgba(255,255,255,.08); box-shadow:var(--shadow);
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015))
+    }
+    .intro .logo-big{
+      margin:0 0 8px; padding:6px 0 8px;
+      font:400 66px/1.12 "Parisienne","Great Vibes",cursive;
+      background:linear-gradient(180deg, var(--gold), var(--gold-deep));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      text-shadow:0 10px 32px rgba(0,0,0,.5)
+    }
+    .intro .subtitle{font:700 18px/1.4 "Playfair Display", serif; color:var(--muted); margin:0 0 12px}
+    .intro blockquote{margin:18px auto; max-width:620px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:13px 20px; border-radius:999px; font:900 13px/1 Lato, system-ui, sans-serif; letter-spacing:.6px; text-transform:uppercase; background:linear-gradient(180deg, var(--gold), var(--gold-deep)); color:#0c0b0a; box-shadow:0 12px 26px rgba(202,166,81,.28); border:0; cursor:pointer}
+    .intro .hint{font-size:13px; color:var(--muted); margin-top:12px}
+    .intro.is-hidden{opacity:0; visibility:hidden; transition:opacity .7s ease, visibility .7s ease}
+
+    /* odsłanianie */
+    .reveal{opacity:0; transform:translateY(18px); transition:opacity .8s ease, transform .8s ease}
+    .reveal.is-visible{opacity:1; transform:none}
+
+    /* rytm akapitów */
+    p{margin:0 0 12px}
+    p + p{margin-top:6px}
+    p + blockquote, blockquote + p{margin-top:14px}
+
+    /* Złote dividers */
+    .section-title + .gold-divider{height:1px; width:100%; margin:10px 0 26px; background:linear-gradient(90deg, transparent, rgba(202,166,81,.70), transparent); border:0;}
+    .kicker + .gold-divider{height:1px; width:100%; margin:14px 0 26px; background:linear-gradient(90deg, transparent, rgba(202,166,81,.55), transparent);}
+
+    /* MANIFEST / ABOUT — premium typografia i cytaty */
+    .manifest h4{
+      margin:0 0 10px; font:700 22px/1.2 "Cormorant Garamond", serif; letter-spacing:.02em;
+      background:linear-gradient(180deg, var(--gold), var(--gold-deep));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .manifest .rule-gold{
+      height:1px; border:0; margin:16px 0 20px;
+      background:linear-gradient(90deg, transparent, rgba(202,166,81,.7), transparent);
+    }
+    .manifest .txt{font:400 19.5px/1.78 "Cormorant Garamond", serif; color:var(--ink); letter-spacing:.005em;}
+    .manifest .txt + .txt{ margin-top:8px; }
+    .manifest .txt.first:first-letter{
+      float:left; font:700 56px/0.8 "Cormorant Garamond", serif; color:var(--gold);
+      margin:.08em .18em 0 0; text-shadow:0 6px 16px rgba(0,0,0,.35);
+    }
+    .manifest .quote{
+      position:relative; margin:18px 0; padding:16px 20px 14px 20px;
+      border-left:3px solid var(--gold);
+      background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02));
+      border-radius:0 14px 14px 0;
+      font: italic 300 20px/1.78 "Cormorant Garamond", serif; letter-spacing:1px; opacity:.95;
+    }
+    .manifest .quote:after{content:""; display:block; height:1px; margin-top:10px; background:linear-gradient(90deg, rgba(202,166,81,.75), rgba(202,166,81,.25));}
+    .manifest .pull{
+      margin:22px 0; padding:14px 18px;
+      border:1px solid rgba(202,166,81,.45);
+      background:linear-gradient(180deg, rgba(202,166,81,.08), rgba(202,166,81,.03));
+      border-radius:14px;
+      font: italic 600 20px/1.65 "Cormorant Garamond", serif; text-align:center;
+    }
+    .manifest ul{margin:8px 0 6px 0; padding-left:20px; font: 400 19.5px/1.78 "Cormorant Garamond", serif;}
+    .manifest li{ margin:6px 0; }
+  </style>
+</head>
+<body>
+  <!-- SVG ikony -->
+  <svg width="0" height="0" style="position:absolute">
+    <symbol id="i-yoni" viewBox="0 0 24 24"><path d="M12 3c3.5 3.2 7 6.7 7 10.3A7 7 0 0 1 5 13.3C5 9.7 8.5 6.2 12 3zm0 4.2c-2.2 2-4.4 4-4.4 6.1a4.4 4.4 0 0 0 8.8 0c0-2.1-2.2-4.1-4.4-6.1z"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 2s2.8 3.1 2.8 6.1S12 14 12 14s-2-1.5-2.7-3.3C8.4 8.4 9.4 6 9.4 6S6.7 8.2 6 11.8C5.4 15.1 7 18 7 18s-3.7-1.4-3.7-6.2C3.3 4.9 8.6 2 8.6 2s.1 3.1 3.4 5C15.5 8.8 12 2 12 2z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M12 5C6.7 5 2.5 9 1.2 12c1.3 3 5.5 7 10.8 7s9.5-4 10.8-7C21.5 9 17.3 5 12 5zm0 3.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2z"/></symbol>
+    <symbol id="i-moon-diamond" viewBox="0 0 24 24"><path d="M14 3a8.5 8.5 0 1 0 6.9 13.6A7 7 0 1 1 14 3zM8.8 14l2.1-3.2h2.2L15.2 14l-3.2 3.2L8.8 14z"/></symbol>
+    <symbol id="i-rose" viewBox="0 0 24 24"><path d="M12 3c2.5 0 4.5 1.7 4.5 3.8S14.5 11 12 11 7.5 9.3 7.5 6.8 9.5 3 12 3zm-6 12c2.2-1.6 3.9-2 6-2s3.8.4 6 2c-1.2 3-3.2 6-6 6s-4.8-3-6-6z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 2h10.8A1.6 1.6 0 0 1 19 3.6v16.8A1.6 1.6 0 0 1 17.4 22H6.6A1.6 1.6 0 0 1 5 20.4V3.6A1.6 1.6 0 0 1 6.6 2zm0 3v14.4h10.8V5H6.6zm5.4 13.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.2l9 5.6 9-5.6V7H3zm18 10V9.3l-9 5.6-9-5.6V17h18z"/></symbol>
+  </svg>
+
+  <!-- INTRO (zawsze na wejściu) -->
+  <div id="intro" class="intro" role="dialog" aria-modal="true" aria-label="Wejście do Liliths Temple">
+    <div class="panel">
+      <p class="logo-big">Liliths Temple</p>
+      <p class="subtitle"><span class="sc">Świątynia nasycenia żywotnością</span></p>
+      <blockquote>💎 „Świadomość i przyjemność — gdy są zjednoczone, uzdrawiają wszystko.” 💎</blockquote>
+      <p class="subtle" style="max-width:680px; margin:0 auto 14px">
+        Wejdź powoli. Zostaw za sobą świat hałasu. Tutaj oddech staje się modlitwą, a dotyk — <em>językiem prawdy</em>.
+      </p>
+      <p class="subtle" style="max-width:680px; margin:0 auto 22px">
+        Głębia nie krzyczy. Zaprasza. Jeśli czujesz wołanie — odpowiedz.
+      </p>
+      <button id="enterBtn" class="btn">Wejdź do Świątyni</button>
+      <div class="hint">Po kliknięciu wejdziesz na stronę główną.</div>
+    </div>
+  </div>
+
+  <!-- NAWIGACJA -->
+  <header class="nav" aria-hidden="true">
+    <div class="wrap inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-title" aria-label="Liliths Temple">Liliths Temple</div>
+      </div>
+      <nav class="menu" aria-label="Główne">
+        <a href="#home">Strona główna</a>
+        <a href="#about">Filozofia</a>
+        <a href="#ritual">Autorski masaż</a>
+        <a href="#temple">Świątynia</a>
+        <a href="#forwho">Dla kogo</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#manifest">Manifest</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero wrap">
+    <p class="kicker">🔮 TANTRA LILITHS TEMPLE</p>
+    <hr class="gold-divider">
+    <h1 class="hero-title"><svg class="icon" aria-hidden="true"><use href="#i-yoni"/></svg> Świątynia żywotności i nasycenia</h1>
+    <p class="lead">
+      Świątynia żywotności i nasycenia, stojącą otworem dla wszystkich, którzy pragną i nie boją się poczuć mocniej i głębiej.
+      Miejsce, przywracające człowieka do jego pełni.
+    </p>
+    <blockquote>„Świadomość i przyjemność — gdy są zjednoczone, uzdrawiają wszystko.”</blockquote>
+  </main>
+
+  <!-- O MNIE / FILOZOFIA (styl manifestu) -->
+  <section id="about">
+    <div class="wrap reveal">
+      <h3 class="section-title"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> 🜂 O mnie — Filozofia Lilith</h3>
+      <hr class="gold-divider">
+      <div class="card manifest">
+        <h4>Głos Lilith</h4>
+        <hr class="rule-gold" />
+        <p class="txt first"><strong>Lilith</strong> — bogini i przewodniczka, która uświadomi Cię o potencjale drzemiącym w przeżywanej przyjemności i przypomni, jak być obecnym, gdy jesteśmy nią obdarowani. Pozwalam na autentyczność, wybaczam niedoskonałość. Nie sprzedaję ciała — prowadzę do szczytów i granic, gdzie rodzi się prawda.</p>
+        <div class="quote">„Obecność jest moim językiem. Delikatność — moją siłą.”</div>
+
+        <h4>Droga i intencja</h4>
+        <hr class="rule-gold" />
+        <p class="txt">Nie jestem terapeutką z dyplomu. Jestem samozwańczą terapeutką z doświadczenia, krwi i duszy. Pragnę, aby moi klienci czerpali nie tylko oczywistą przyjemność z każdej wspólnej sesji, lecz także świadomie doświadczali procesów hartujących, które zachodzą w nas, gdy docieramy do najgłębszych zakamarków własnej świadomości.</p>
+        <p class="txt">Moje sesje są przepełnione bezwarunkową miłością i ukierunkowane na Twój rozwój — w harmonii z przyjemnością, która staje się naturalnym językiem ciała i duszy.</p>
+        <div class="pull">Przyjmuję życie i człowieka takim, jakim jest — z czułością, autentycznością i szacunkiem dla wszystkiego, co prawdziwe.</div>
+
+        <h4>Symbioza dwóch światów</h4>
+        <hr class="rule-gold" />
+        <p class="txt">Łączę tantryczną filozofię prozdrowotną z fascynacją zdrową, świadomą erotyką. Z tej symbiozy rodzi się przestrzeń, która otwiera serca, umysły i ciała na nowe doznania — nasycone obecnością, bliskością i akceptacją.</p>
+        <p class="txt">To doświadczenie inspiruje do kontynuowania podróży w głąb siebie — ku pełni zmysłowej świadomości i odważnej, pięknej seksualności.</p>
+
+        <h4>Bez pieczątek</h4>
+        <hr class="rule-gold" />
+        <p class="txt">Moja ścieżka nie prowadzi przez certyfikaty i systemy. Nie stoję za żadnym autorytetem, instytucją ani pieczątką. Podążam za autentyczną ludzką naturą i miłuję się w świadomym przeżywaniu.</p>
+        <p class="txt" style="font-weight:700; margin-top:6px">— Lilith, założycielka</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTORSKI MASAŻ -->
+  <section id="ritual">
+    <div class="wrap reveal">
+      <h3 class="section-title"><svg class="icon" aria-hidden="true"><use href="#i-flame"/></svg> 🌹 Autorski masaż Lilith</h3>
+      <hr class="gold-divider">
+      <div class="card prose">
+        <p style="font-style:italic; font-weight:600; font-size:22px;">
+          🕉️ Orgazmiczny, uzdrawiający dotyk, który porusza dogłębnie — jego intencja i tonacja niosą w sobie świętą wartość obecności. 🕉️
+        </p>
+        <div class="list-pill">
+          <span class="pill">obecność</span>
+          <span class="pill">szacunek</span>
+          <span class="pill">bezwarunkowa miłość</span>
+          <span class="pill">prawda</span>
+        </div>
+        <blockquote>Autorski masaż Lilith to ceremonia obecności — o tantrycznym podłożu, z nutą zdrowej erotyki, energii i głębokiego zrozumienia ludzkiej natury.</blockquote>
+        <p>To nie jest technika, a intuicyjny rytuał, współtworzony za każdym razem od nowa wraz z Tobą, podążając za Twoimi potrzebami.</p>
+        <p>To świątynia aktywacji i integracji zmysłów. Miejsce, w którym dogłębne czucie staje się kluczem do spełnienia.</p>
+        <p>To święta przestrzeń zaufania i prawdy. Tu ciało odzyskuje głos. Tu dotyk przynosi ulgę.</p>
+
+        <p class="subtle" style="margin-top:12px"><strong>Czas trwania:</strong> 90 / 120 / 180 minut — sesje indywidualne oraz dla par.</p>
+
+        <div class="pricing" style="margin:18px 0 8px">
+          <div class="price"><h4>90 MIN</h4><div class="num">550 PLN / 130 EUR</div></div>
+          <div class="price"><h4>120 MIN</h4><div class="num">700 PLN / 170 EUR</div></div>
+          <div class="price"><h4>180 MIN</h4><div class="num">1000 PLN / 240 EUR</div></div>
+          <div class="price"><h4>Sesja dla par</h4><div class="num">3h — 1500 PLN / 350 EUR</div></div>
+        </div>
+
+        <p class="note">PRZEDPŁATA NA KONTO • po 22:00: +50 PLN / +10 EUR do każdej godziny</p>
+
+        <div class="contact-links" style="margin-top:16px">
+          <a class="icon-wrap" href="#contact">
+            <svg class="icon" aria-hidden="true"><use href="#i-rose"/></svg>
+            <span>Umów sesję telefonicznie lub mailowo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ŚWIĄTYNIA -->
+  <section id="temple">
+    <div class="wrap grid cols-2 reveal">
+      <div class="card prose">
+        <h3 class="section-title"><svg class="icon" aria-hidden="true"><use href="#i-flame"/></svg> 🕯️ Świątynia — i jej filary</h3>
+        <hr class="gold-divider">
+        <p>To święta, dźwiękoszczelna przestrzeń zaufania i prawdy. Gdzie znajdujesz czas na igraszki ze zmysłami.</p>
+        <p>Wszystko, co powiesz i przeżyjesz w tej przestrzeni, zostaje tu na zawsze. Szczelna świątynia bez wycieku energii. Tu możesz pozwolić sobie na bezwstydne obnażenie się ze swoich masek.</p>
+        <p><strong>Tu każdy jest brany, w ramiona.</strong></p>
+      </div>
+      <div class="card">
+        <p class="subtle" style="margin:0 0 6px">📍 Lokalizacja</p>
+        <p style="margin-top:2px"><strong>Warszawa — Centrum</strong></p>
+        <p class="subtle">Dokładny adres przekazuję po potwierdzeniu terminu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DLA KOGO -->
+  <section id="forwho">
+    <div class="wrap reveal">
+      <h3 class="section-title"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg> 🜃 Dla kogo</h3>
+      <hr class="gold-divider">
+      <div class="card manifest">
+        <div class="quote">„Dla tych, którzy czują więcej, niż pozwala im świat.”</div>
+        <p class="txt">Dla fanatyków żywotności i zmysłowości, hedonistów, odkrywców. Dla tych, którzy mają odwagę zejść głębiej w siebie.</p>
+        <p class="txt">Dla tych, którzy mają dość pseudo-terapii i chcą autentycznego spotkania. Dla tych, którzy są gotowi na odkrywanie i przeżywanie siebie na wszystkie możliwe sposoby.</p>
+        <p class="txt" style="font-weight:600">Dla Ciebie — jeśli czujesz, że to miejsce Cię woła.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT (telefon + e-mail) -->
+  <section id="contact">
+    <div class="wrap reveal">
+      <h3 class="section-title"><svg class="icon" aria-hidden="true"><use href="#i-rose"/></svg> 🜁 Kontakt</h3>
+      <hr class="gold-divider">
+      <div class="card">
+        <blockquote>Kontaktujesz się ze mną bezpośrednio i dyskretnie.</blockquote>
+        <div class="contact-links">
+          <!-- TODO: podmień numer i e-mail -->
+          <a class="icon-wrap" href="tel:+48517356470">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            <span>+48 517 356 470</span>
+          </a>
+          <a class="icon-wrap" href="mailto:liliths777temple@proton.me?subject=Sesja%20Liliths%20Temple">
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+            <span>liliths777temple@proton.me</span>
+          </a>
+        </div>
+        <p class="note" style="margin-top:12px">Zaufanie zaczyna się od prostoty i prywatności.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFEST -->
+  <section id="manifest">
+    <div class="wrap reveal">
+      <h3 class="section-title"><svg class="icon" aria-hidden="true"><use href="#i-moon-diamond"/></svg> 🜔 Manifest Lilith</h3>
+      <hr class="gold-divider">
+      <div class="card manifest">
+        <h4>Prolog</h4>
+        <hr class="rule-gold" />
+        <p class="txt first"><strong>Świadomość • Ciało • Uczucie • Obecność</strong>. Tantra zaczyna się w głowie. A gdy serce się otworzy, zaczyna przenikać całe ciało — oczyszczając je z blokad, przekonań, wstydu, lęku i porywczości.</p>
+        <p class="txt">Gdy obnażamy to, co dotąd ukrywała podświadomość, Tantra dochodzi do pełni — i pozwala na orgazm nie tylko fizyczny, ale i mentalny.</p>
+        <div class="quote">„Świadomość i przyjemność — gdy są zjednoczone, uzdrawiają wszystko.”</div>
+
+        <h4>Praktyka świadomości</h4>
+        <hr class="rule-gold" />
+        <p class="txt"><strong>To nie zabawa orgazmem</strong>, lecz świadome eksperymentowanie z własną świadomością i jej integracja z ciałem.</p>
+        <p class="txt">To nie same techniki oddechu i medytacje, lecz <em>uważność i obecność</em> w każdej wykonywanej czynności.</p>
+        <div class="pull">Masaż tantryczny nie jest zabawką do osiągania szczytów — to dojrzały proces uświadamiania, odkrywania granic i zdobywania doświadczeń.</div>
+
+        <h4>Zmysły jako droga</h4>
+        <hr class="rule-gold" />
+        <p class="txt">Tantra to nie tylko zabawa zmysłami, ale zmysłowa gra — jak na instrumencie o bezgranicznych możliwościach — pogłębiająca żywotność i czułość wobec ciała.</p>
+        <ul><li>prewencja i terapia,</li><li>rekreacja i jednocześnie praca nad sobą,</li><li>otwartość na doświadczanie — bez wstydu i bez pośpiechu.</li></ul>
+        <div class="quote">„Dogłębne czucie staje się kluczem do spełnienia.”</div>
+
+        <h4>Seksualność bez tabu</h4>
+        <hr class="rule-gold" />
+        <p class="txt">W tantrze nie chodzi jedynie o pobudzenie seksualne. Seks, seksualność i orgazm nie są tabu — należą do rzeczy oczywistych, z którymi obchodzimy się z uważnością i szacunkiem.</p>
+        <p class="txt">To odpowiedzialne czczenie naszej zwierzęcej natury, bez bagatelizowania i bez strachu.</p>
+        <div class="pull">Świadoma seksualność jest językiem prawdy — gdy łączy ciało, serce i umysł.</div>
+
+        <h4>Naturalna medycyna przyjemności</h4>
+        <hr class="rule-gold" />
+        <p class="txt">Uświadomiona natura daje nam możliwości: rozwojowe, terapeutyczne i te, które po prostu przynoszą przyjemność.</p>
+        <p class="txt"><strong>Przyjemność</strong> działa jak lek i zabezpieczenie zarazem — pod warunkiem, że obchodzimy się z nią <em>świadomie</em>.</p>
+        <div class="quote">„Każdą chwilę można zamienić w sztukę odczuwania.”</div>
+
+        <h4>Esencja</h4>
+        <hr class="rule-gold" />
+        <p class="txt"><strong>Tantra to świadomość.</strong> Świadomość potrzeb, popędów, braków i blokad. Ich usłyszenie i spełnianie prowadzi do prawdziwego spełnienia seksualnego — doświadczenia, które łączy ciało, umysł i duszę w jedno.</p>
+        <p class="txt"><em>Bez nadużywania. Bez niszczenia. Bez powierzchowności.</em> Z szacunkiem do każdej energii, z wdzięcznością wobec ciała, z pokorą wobec życia.</p>
+
+        <div class="pull">~ Lilith ~</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOPKA -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="grid cols-2">
+        <div>
+          <p style="margin:0; font:700 18px/1.2 'Cormorant Garamond',serif">Lilith’s Temple © <span id="year"></span></p>
+          <p class="subtle" style="margin:.4rem 0 0">📍 Warszawa – Centrum</p>
+          <p class="subtle" style="margin:.2rem 0 0">📞 Kontakt telefoniczny lub e-mail</p>
+        </div>
+        <div>
+          <p class="legal">„Zaufanie i dyskrecja są tutaj oczywistością. Dotyk nie jest usługą lecz świętością.”</p>
+          <p class="legal">Wszelkie prawa zastrzeżone. Kopiowanie i powielanie treści bez zgody autorki surowo zabronione.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Rok w stopce
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Odsłanianie sekcji
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, {threshold:.16});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Płynny scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href');
+        if(id.length>1){
+          const el = document.querySelector(id);
+          if(!el) return;
+          e.preventDefault();
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+          history.pushState(null,'',id);
+        }
+      });
+    });
+
+    // INTRO — zawsze przy wejściu; znika po kliknięciu
+    const intro = document.getElementById('intro');
+    const enterBtn = document.getElementById('enterBtn');
+    const nav = document.querySelector('.nav');
+
+    function showIntro(){
+      intro.classList.remove('is-hidden');
+      nav.setAttribute('aria-hidden','true');
+      document.documentElement.style.overflow='hidden';
+    }
+    function closeIntro(){
+      intro.classList.add('is-hidden');
+      nav.removeAttribute('aria-hidden');
+      document.documentElement.style.overflow='';
+    }
+    showIntro();
+    enterBtn.addEventListener('click', closeIntro, {once:true});
+  </script>
+</body>
+</html>
